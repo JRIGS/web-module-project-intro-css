@@ -1,161 +1,275 @@
 /* General Styling*/
-html, body, div, span, applet, object, iframe,  
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
-a, abbr, acronym, address, big, cite, code,  
-del, dfn, em, img, ins, kbd, q, s, samp,  
-small, strike, strong, sub, sup, tt, var,  
-b, u, i, center,  
-dl, dt, dd, ol, ul, li,  
-fieldset, form, label, legend,  
-table, caption, tbody, tfoot, thead, tr, th, td,  
-article, aside, canvas, details, embed,  
-figure, figcaption, footer, header, hgroup,  
-menu, nav, output, ruby, section, summary,  
-time, mark, audio, video {  
-margin: 0;  
-padding: 0;  
-border: 0;  
-font-size: 100%;  
-font: inherit;  
-vertical-align: baseline;  
-box-sizing:border-box;
-/* border:1px solid grey; */
-max-width:100%;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /* font: inherit;   */
+    vertical-align: baseline;
+    box-sizing: border-box;
+    /* border:1px solid grey;  */
+    max-width: 100%;
 }
 
-  body{
+body {
     color: black;
     font-family: 'Roboto Mono', monospace;
 }
 
-  div.container{
-    width:;
-    margin:;
+div.container {
+    width: ;
+    margin: ;
 }
 
-header nav{
+header nav {
     width: 100%;
     text-align: center;
     height: 25px;
     margin: 75px 0px;
 }
 
-header nav a{
+header nav a {
     text-decoration: none;
     margin: 0 50px;
     color: white;
 }
 
-.introduction-container{
+@keyframes navswitch {
+    0% {
+        background-color: white;
+    }
+
+    33% {
+        background-color: black;
+    }
+
+    66% {
+        background-color: grey;
+    }
+}
+
+header nav a:hover {
+
+    background-color: gray;
+    animation-name: navswitch;
+    animation-duration: 4s;
+    color: whitesmoke;
+}
+
+.introduction-container {
     text-align: center;
     margin: 0 auto;
 }
 
-.mountain-img{
+.introduction-container h1:hover {
+    color: chocolate;
+}
+
+.introduction-container p:hover {
+    color: coral;
+}
+
+.mountain-img {
     border-radius: 100%;
     width: 300px;
     height: 300px;
 }
 
-.mountain-img-container{
+.mountain-img:hover {
+    border-radius: 100%;
+    width: 80%;
+}
+
+.mountain-img-container {
     width: 25%;
     display: inline-block;
     margin-top: auto 0;
 }
 
 
-.header-information{
+.header-information {
     width: 40%;
     display: inline-block;
     text-align: center;
     line-height: 8rem;
 }
 
-.header-information h1{
+.header-information h1 {
     font-family: 'Chelsea Market', cursive;
     font-size: 3rem;
 }
 
-.header-information p{
+.header-information p {
     display: inline-block;
 }
 
 
-.first-container{
-    background-color:#DDB9A3;
+.first-container {
+    background-color: #DDB9A3;
     width: 90%;
     text-align: center;
     padding: 50px;
     margin: 0 auto;
 }
 
-.first-container p{
-    color:white;
+.first-container p {
+    color: white;
     text-align: center;
     line-height: 40px;
     margin-top: 5px;
 }
 
-.second-container{
-   text-align: center;
+.first-container p:hover {
+    color: black;
 }
 
-.second-container img{
-    width: 150px;
-    height: 150px;
+.second-container {
+    text-align: center;
+}
+
+.second-container img {
+    /* width: ;
+    height: ; */
     margin-top: 25px;
 }
 
 
-.second-container p{
+.second-container p {
     width: 20%;
     margin: 0 auto;
 }
 
+.second-container p:hover {
+   color: coral;
+}
 
-.orange-box{
+.orange-box {
     background-color: #FF764E;
     padding: 2%;
     border-radius: 25%;
 }
 
-.blue-box{
+.blue-box {
     background-color: #5ED3EB;
     padding: 2%;
     border-radius: 25%;
 }
 
-.yellow-box{
+.yellow-box {
     background-color: #FFCD69;
     padding: 2%;
     border-radius: 25%;
 }
 
-footer nav{
+footer nav {
     margin: 40px 0 !important;
+    background-color: #F9E7DC;
+    width: 90%;
 }
 
 
-
-
-
-
-
-
-footer img{
+footer img {
     background-size: 100%;
-    height:300px;
-    width:100%;
+    height: 300px;
+    width: 100%;
     margin-top: 75px;
 }
 
-footer nav{
+footer nav {
     width: 100%;
     padding: 20px;
     text-align: center;
 }
 
-footer nav a{
+footer nav a {
     text-decoration: none;
     margin: 0 50px;
+}
+
+footer nav a:hover {
+
+    background-color: gray;
+    animation-name: navswitch;
+    animation-duration: 4s;
+    color: whitesmoke;
 }
